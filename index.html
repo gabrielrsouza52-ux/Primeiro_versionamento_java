@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login — PetFicha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="login">
+        <div class="cabecalho">
+            <h1>Login</h1>
+            <p>Entre com seus dados para acessar o PetFicha.</p>
+        </div>
+
+        <form onsubmit="logar(event)">
+            <div>
+                <label for="email">E-mail</label>
+                <input
+                    type="email"
+                    id="email"
+                    autocomplete="username"
+                    required
+                    autofocus
+                >
+            </div>
+
+            <div>
+                <label for="senha">Senha</label>
+                <input
+                    type="password"
+                    id="senha"
+                    autocomplete="current-password"
+                    required
+                >
+            </div>
+
+            <div id="botao">
+                <button type="submit">Entrar</button>
+            </div>
+        </form>
+    </main>
+
+    <script>
+        function logar(event) {
+            event.preventDefault();
+            window.location.href = "formulario.html";
+        }
+    </script>
+
+</body>
+</html>

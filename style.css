@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+    background-color: #eaf5ee;
+    color: #243b2e;
+}
+
+
+.login {
+    width: 100%;
+    max-width: 400px;
+    padding: 32px;
+
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.cabecalho {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.cabecalho h1 {
+    margin: 0 0 12px;
+    color: #286443;
+    font-size: 32px;
+}
+
+.cabecalho p {
+    margin: 0;
+    color: #59675e;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+form > div {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #a7bcae;
+    border-radius: 8px;
+
+    background-color: #ffffff;
+    color: #243b2e;
+    font: inherit;
+}
+
+
+input:focus-visible {
+    outline: 2px solid #286443;
+    outline-offset: 2px;
+}
+
+
+#botao {
+    margin-bottom: 0;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+
+    background-color: #286443;
+    color: #ffffff;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #1c4c31;
+}
+
+button:focus-visible {
+    outline: 2px solid #286443;
+    outline-offset: 3px;
+}
